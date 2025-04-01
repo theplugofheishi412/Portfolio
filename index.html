@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Cyrille Dimitri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <h1 class="animated-title">Bienvenue sur Mon Portfolio</h1>
+        <nav class="head-nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link active" href="#about">À Propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#competences">Competences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <h2>À Propos de Moi</h2>
+        <p> 
+            Actuellement en Licence 2 en Génie Logiciel à l'Institut Supérieur d'Informatique de Dakar,
+            j'ai eu à mettre en pratique mes connaissances dans le développement de projets académiques et personnels.
+            Je maîtrise des langages tels que HTML, CSS, JavaScript, PHP, Laravel, MySQL, C++, C, Python, Java ainsi
+            qu'en administration système (Windows Server 2019, Debian) et gestion de bases de données, avec des bases en réseaux.
+        </p>
+        <button class="cv-button" id="downloadCV">
+            <i class="fas fa-download"></i> Télécharger mon CV
+        </button>
+    </section>
+
+    <section class="timeline" id="formations">
+        <h2>Formations</h2>
+        <div class="timeline-item">
+            <h3>Licence 2 en Génie Logiciel</h3>
+            <span class="date">2024-2025</span>
+            <p>Institut Supérieur d'Informatique, Dakar</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Licence 1 en Génie Logiciel</h3>
+            <span class="date">2023-2024</span>
+            <p>Institut Supérieur d'Informatique, Dakar</p>
+        </div>
+    </section>
+
+    <section class="skills-section" id="competences">
+        <h2>Compétences</h2>
+        <p>Developpement web, programmation, administration systeme, gestion de bases de donnees...</p>
+        <div class="skill">
+            <div class="skill-name">HTML <span class="skill-percent">100%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS <span class="skill-percent">90%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">JavaScript <span class="skill-percent">35%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">PHP <span class="skill-percent">50%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">PhotoShop<span class="skill-percent">70%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">MYSQL<span class="skill-percent">50%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">WINDOWS SERVER 2019<span class="skill-percent">60%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">EXCEL <span class="skill-percent">40%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+        </div>
+    </section>
+
+    <section class="projects" id="projets">
+        <h2>Projets</h2>
+        <ul class="project-list">
+            <li><a href="#">Système de gestion de restaurant</a></li>
+            <li><a href="#">Application de messagerie PHP</a></li>
+            <li><a href="#">Solution de streaming musical</a></li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Portfolio de Cyrille Dimitri. Tous droits reserves.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/cyrille-dimitri-ab7a99332/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/theplugofheishi412" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
